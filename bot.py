@@ -42,7 +42,7 @@ async def handler(event):
     await client.send_message(chat,f"wait few minutes ...{links}")
     link =f"{d}/files/{links}"
     l =link.split('/')[-1]
-    s = f"http://pdisk.net/api/ndisk_manager/video/create?link_type=link&content_src={link}&source=2000&uid=21922371&title={l}&description=telegram"
+    s = f"http://pdisk.net/api/ndisk_manager/video/create?link_type=link&content_src={link}&source=2000&uid={uid}&title={l}&description=telegram"
     r = requests.get(s).json()
     z=r['data']["item_id"]
    # await event.delete()
