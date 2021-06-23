@@ -10,7 +10,7 @@ import shutil
 import subprocess
 d = os.environ.get("d")
 uid = os.environ.get("uid")
-client = TelegramClient('anfghohn',int(os.environ.get("a")),os.environ.get("b")).start(bot_token=os.environ.get("a"))
+client = TelegramClient('anfghohn',int(os.environ.get("a")),os.environ.get("b")).start(bot_token=os.environ.get("c"))
 @client.on(events.NewMessage(pattern='(?i)/start'))
 async def handler(event):
     chat = await event.get_chat()
