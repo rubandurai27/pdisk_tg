@@ -44,12 +44,14 @@ async def handler(event):
     #l =link.split('/')[-1]
     l =event.text.split(' ')[2]
     s = f"http://linkapi.net/open/create_item?api_key={uid}&content_src={link}&link_type=link&title={l}"
-    r = requests.get(s).json()
-    print(r)
-    z=r['data']["item_id"]
+    m=dict(r)
+    f=m['data']['item_id']
+    #r = requests.get(s).json()
+    #print(r)
+    #z=r['data']["item_id"]
    # await event.delete()
    # client.delete_messages()
-    markup  = client.build_reply_markup(Button.url(" 🔥url🔥",f"http://m.pdisk.net/share-video?videoid={z}"))
+    markup  = client.build_reply_markup(Button.url(" 🔥url🔥",f"http://m.pdisk.net/share-video?videoid={f}"))
     await client.send_message(chat, "link will working depends on size it takes half or more ... ", buttons=markup)
     #os.remove(f"/app/templates/download/{links}")  
 @client.on(events.NewMessage(pattern='(?i)/upload'))
