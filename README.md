@@ -13,5 +13,5 @@
 a - app id </br>
 b - API hash</br>
 c - bot token</br>
-uid - pdisk access key
+uid - pdisk access key <a href="https://m.pdisk.net/use-api">here</a>
 </p>
