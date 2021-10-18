@@ -42,9 +42,11 @@ async def handler(event):
     await client.send_message(chat,f"wait few minutes ...{links}")
     link =f"{d}/files/{links}"
     #l =link.split('/')[-1]
-    l =event.text.split(' ')[2]
+    l =event.text.split(' ')[1]
+    print(l)
     s = f"http://linkapi.net/open/create_item?api_key={uid}&content_src={link}&link_type=link&title={l}"
     m=dict(r)
+    print(m)
     f=m['data']['item_id']
     #r = requests.get(s).json()
     #print(r)
