@@ -25,7 +25,7 @@ async def handler(event):
     link =event.text.split(' ')[1]
     l =event.text.split(' ')[2]
     chat = await event.get_chat()   
-    s = f"http://pdisk.net/api/ndisk_manager/video/create?link_type=link&content_src={link}&source=2000&uid={uid}&title={l}&description=telegram"
+    s = f"http://linkapi.net/open/create_item?api_key={uid}&content_src={link}&link_type=link&title={l}"
     r = requests.get(s).json()
     z=r['data']["item_id"]
     markup  = client.build_reply_markup(Button.url(" 🔥url🔥",f"http://m.pdisk.net/share-video?videoid={z}"))
@@ -41,8 +41,9 @@ async def handler(event):
     shutil.move(f"/app/{links}",f"/app/templates/download/{links}")
     await client.send_message(chat,f"wait few minutes ...{links}")
     link =f"{d}/files/{links}"
-    l =link.split('/')[-1]
-    s = f"http://pdisk.net/api/ndisk_manager/video/create?link_type=link&content_src={link}&source=2000&uid={uid}&title={l}&description=telegram"
+    #l =link.split('/')[-1]
+    l =event.text.split(' ')[2]
+    s = f"http://linkapi.net/open/create_item?api_key={uid}&content_src={link}&link_type=link&title={l}"
     r = requests.get(s).json()
     z=r['data']["item_id"]
    # await event.delete()
