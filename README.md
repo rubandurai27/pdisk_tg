@@ -9,9 +9,12 @@
 <img src="https://m.pdisk.net/public/img/icon-pdisk.4a5eb04a.png"></img>
 <img src="https://www.playit.app/public/img/m_s_1.3e616391.jpg"></img>
 
-<p><h1>How to use </h1>
+<p><h1>How to use [heroku Config]</h1>
 a - app id </br>
 b - API hash</br>
 c - bot token</br>
 uid - pdisk access key <a href="https://m.pdisk.net/use-api">here</a>
 </p>
+<h2> commands</h2>
+<p> /telepdisk filename.mp4 </br>
+/upload </p>
