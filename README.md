@@ -10,8 +10,8 @@
 <img src="https://www.playit.app/public/img/m_s_1.3e616391.jpg"></img>
 
 <p><h1>How to use </h1>
-a - app id
-b - API hash
-c - bot token
+a - app id </br>
+b - API hash</br>
+c - bot token</br>
 uid - pdisk access key
 </p>
