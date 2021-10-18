@@ -45,6 +45,7 @@ async def handler(event):
     l =event.text.split(' ')[2]
     s = f"http://linkapi.net/open/create_item?api_key={uid}&content_src={link}&link_type=link&title={l}"
     r = requests.get(s).json()
+    print(r)
     z=r['data']["item_id"]
    # await event.delete()
    # client.delete_messages()
