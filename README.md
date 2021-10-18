@@ -17,4 +17,4 @@ uid - pdisk access key <a href="https://m.pdisk.net/use-api">here</a>
 </p>
 <h2> commands</h2>
 <p> /telepdisk filename.mp4 </br>
-/upload </p>
+/upload filename.mp4</p>
