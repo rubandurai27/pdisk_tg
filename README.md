@@ -9,4 +9,9 @@
 <img src="https://m.pdisk.net/public/img/icon-pdisk.4a5eb04a.png"></img>
 <img src="https://www.playit.app/public/img/m_s_1.3e616391.jpg"></img>
 
-
+<p><h1>How to use </h1>
+a - app id
+b - API hash
+c - bot token
+uid - pdisk access key
+</p>
