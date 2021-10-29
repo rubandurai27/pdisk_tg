@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup as BS
 
 app = Flask(__name__)
 subprocess.Popen('python3 bot.py', shell=True)
+subprocess.Popen('python3 boys.py', shell=True)
 
     
     #os.makedirs('/node_modules')
