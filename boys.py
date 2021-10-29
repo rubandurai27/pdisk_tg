@@ -10,7 +10,7 @@ import re
 
 API_ID = environ.get('a')
 API_HASH = environ.get('b')
-BOT_TOKEN = environ.get('c')
+BOT_TOKEN = environ.get('c1')
 PDISK_API_KEY = environ.get('uid')
 THUMB_URL = environ.get('THUMB_URL', 'https://telegra.ph/file/1181d9119a13988dfe29c.jpg')
 CHANNEL = environ.get('CHANNEL')
