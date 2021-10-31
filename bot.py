@@ -9,8 +9,8 @@ import asyncio
 import shutil
 import subprocess
 d = os.environ.get("d")
-uid = os.environ.get("uid")
-client = TelegramClient('anfghohn',int(os.environ.get("a")),os.environ.get("b")).start(bot_token=os.environ.get("c"))
+uid = os.environ.get("API_KEY")
+client = TelegramClient('anfghohn',int(os.environ.get("API_ID")),os.environ.get("API_HASH")).start(bot_token=os.environ.get("BOT_TOKEN"))
 
 @client.on(events.NewMessage(pattern='(?i)/start'))
 async def handler(event):
