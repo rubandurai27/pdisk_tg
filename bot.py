@@ -32,7 +32,18 @@ async def handler(event):
     r = requests.get(s).json()
     z=r['data']["item_id"]
     markup  = client.build_reply_markup(Button.url("⚡ PDISK LINK ⚡",f"http://m.pdisk.net/share-video?videoid={z}"))
-    await client.send_message(chat, "link will working depends on size it takes half or more ... ", buttons=markup)
+    await client.send_message(chat, "𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭..!
+
+𝙏𝙄𝙏𝙇𝙀 : {links}
+
+𝙐𝙍𝙇 : <code>http://m.pdisk.net/share-video?videoid={z}</code>
+
+𝙎𝙏𝘼𝙏𝙐𝙎 : <code>Processing...</code>
+
+Link Will Be Active Within 5-10 Mins..!
+
+@POWERROCKERS
+@TNFILMBOXOFFICIAL", buttons=markup)
 
 @client.on(events.NewMessage(pattern='/telepdisk'))
 async def handler(event):
@@ -59,7 +70,18 @@ async def handler(event):
    # await event.delete()
    # client.delete_messages()
     markup  = client.build_reply_markup(Button.url("⚡ PDISK LINK⚡",f"http://m.pdisk.net/share-video?videoid={f}"))
-    await client.send_message(chat, "link will working depends on size it takes half or more ... ", buttons=markup)
+    await client.send_message(chat, "𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭..!
+
+𝙏𝙄𝙏𝙇𝙀 : {links}
+
+𝙐𝙍𝙇 : <code>http://m.pdisk.net/share-video?videoid={z}</code>
+
+𝙎𝙏𝘼𝙏𝙐𝙎 : <code>Processing...</code>
+
+Link Will Be Active Within 5-10 Mins..!
+
+@POWERROCKERS
+@TNFILMBOXOFFICIAL", buttons=markup)
     #os.remove(f"/app/templates/download/{links}")  
 
 @client.on(events.NewMessage(pattern='(?i)/upload'))
